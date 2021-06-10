@@ -1,0 +1,15 @@
+.logo {
+  @include font(26px, 31px, 700, $font-family-releway);
+  color: #000000;
+
+  &__part-web {
+    color: $accent-color;
+  }
+}
+
+.footer__logo {
+  display: block;
+  @include font(26px, 31px, 700, $font-family-releway);
+  color: $main-footer-text-color;
+  margin-bottom: 20px;
+}

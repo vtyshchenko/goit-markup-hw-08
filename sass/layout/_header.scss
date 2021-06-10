@@ -1,0 +1,35 @@
+.header {
+  background: $color-white;
+  border-bottom: 1px solid #ececec;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+}
+
+.header__site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.current {
+  color: $accent-color;
+
+  &::after {
+    display: block;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    background-color: $accent-color;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+  }
+}

@@ -1,0 +1,15 @@
+.hero__button {
+  @extend %buttons;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  padding: 10px 32px;
+}
+
+.form__button {
+  @extend %buttons;
+  @extend %flex__center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+}

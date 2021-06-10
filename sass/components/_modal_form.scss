@@ -1,0 +1,40 @@
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity $anim-duration $anim-timing-function,
+    transform $anim-duration $anim-timing-function;
+}
+
+.modal__button {
+  position: absolute;
+  top: calc(50% - 283px);
+  left: calc(50% + 226px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: $color-white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 102;
+  transform: rotateZ(360deg);
+  transition: transform $anim-duration $anim-timing-function,
+    color $anim-duration $anim-timing-function;
+
+  .modal__icon {
+    @include settings__icons(currentColor, 18px, 18px);
+  }
+
+  &:hover {
+    color: $accent-color;
+    transform: rotateZ(0deg);
+  }
+}
