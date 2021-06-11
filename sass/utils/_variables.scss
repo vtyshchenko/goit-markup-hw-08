@@ -2,12 +2,47 @@ $main-text-color: #757575;
 $secondary-text-color: #212121;
 $accent-color: #2196f3;
 $main-footer-text-color: #ffffff;
-$portfolio-filters-background: #f5f4fa;
-$main-portfolio-background: #ffffff;
 $main-studio-background: #e5e5e5;
+$social-link-color: #afb1b8;
+$address-smart-color: rgba(255, 255, 255, 0.6);
 $color-white: #ffffff;
 $color-blue: #188ce8;
-$color-social-link: #afb1b8;
+$color-black: #000000;
+
+$specifics-icon-background-color: #f5f4fa;
+
+$team-background-color: #f5f4fa;
+$team-shadow-color-first: rgba(0, 0, 0, 0.12);
+$team-shadow-color-second: rgba(0, 0, 0, 0.14);
+$team-shadow-color-third: rgba(0, 0, 0, 0.2);
+
+$work-item-title-background: rgba(47, 48, 58, 0.8);
+
+$border-color: #ececec;
+$hero-gradient-color: rgba(47, 48, 58, 0.4);
+$footer-social-link: rgba(255, 255, 255, 0.1);
+$footer-background-color: #2f303a;
+
+$portfolio-shadow-color-first: rgba(0, 0, 0, 0.1);
+$portfolio-shadow-color-second: rgba(0, 0, 0, 0.08);
+$portfolio-shadow-color-third: rgba(0, 0, 0, 0.12);
+$portfolio-border-color: #eeeeee;
+$portfolio-filters-background: #f5f4fa;
+$main-portfolio-background: #ffffff;
+$overlay-background-color: rgba(33, 150, 243, 0.9);
+
+$backdrop-color: rgba(0, 0, 0, 0.2);
+
+$form-input-color: rgba(255, 255, 255, 0.6);
+$form-input-border-color: rgba(255, 255, 255, 0.3);
+$form-input-filter-color: rgba(0, 0, 0, 0.15);
+$form-input-hover-border-color: rgba(33, 150, 243, 0.3);
+$modal-button-border-color: rgba(0, 0, 0, 0.1);
+$modal-form-shadow-color-first: rgba(0, 0, 0, 0.12);
+$modal-form-shadow-color-second: rgba(0, 0, 0, 0.14);
+$modal-form-shadow-color-third: rgba(0, 0, 0, 0.2);
+$modal-border-color: rgba(33, 33, 33, 0.2);
+$modal-shadow-color: rgba(0, 0, 0, 0.15);
 
 $cards-list-count: 3;
 $margin-30: 30px;

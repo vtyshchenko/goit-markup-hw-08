@@ -34,8 +34,9 @@
       background-color: $accent-color;
       color: $color-white;
       cursor: pointer;
-      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 3px 1px $portfolio-shadow-color-first,
+        0px 1px 2px $portfolio-shadow-color-second,
+        0px 2px 2px $portfolio-shadow-color-third;
     }
   }
 }
@@ -65,8 +66,9 @@
     &:focus,
     &:active,
     &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
-        0px 4px 4px rgba(0, 0, 0, 0.08), 1px 4px 6px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 1px 1px $portfolio-shadow-color-first,
+        0px 4px 4px $portfolio-shadow-color-second,
+        1px 4px 6px $portfolio-shadow-color-third;
       border-radius: 4px;
     }
   }
@@ -78,8 +80,9 @@
     &:focus,
     &:active,
     &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1),
-        0px 4px 4px rgba(0, 0, 0, 0.08), 1px 4px 6px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 1px 1px $portfolio-shadow-color-first,
+        0px 4px 4px $portfolio-shadow-color-second,
+        1px 4px 6px $portfolio-shadow-color-third;
       border-radius: 4px;
     }
   }
@@ -91,9 +94,9 @@
 
   &__text {
     padding: 20px 24px;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
+    border-left: 1px solid $portfolio-border-color;
+    border-bottom: 1px solid $portfolio-border-color;
+    border-right: 1px solid $portfolio-border-color;
   }
 
   &__title {
@@ -121,7 +124,7 @@
   opacity: 0;
   font-size: 18px;
   color: $color-white;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: $overlay-background-color;
   overflow: auto;
   width: 100%;
   height: 100%;

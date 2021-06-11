@@ -1,6 +1,6 @@
 .logo {
   @include font(26px, 31px, 700, $font-family-releway);
-  color: #000000;
+  color: $color-black;
 
   &__part-web {
     color: $accent-color;

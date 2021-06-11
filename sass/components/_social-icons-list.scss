@@ -11,7 +11,7 @@
 
 .social__link {
   @extend %flex__center;
-  color: $color-social-link;
+  color: $social-link-color;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -34,6 +34,6 @@
 }
 
 .footer__social-link {
-  background: rgba(255, 255, 255, 0.1);
+  background: $footer-social-link;
   color: $color-white;
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #2f303a;
+  background-color: $footer-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -26,7 +26,7 @@
 }
 
 .address__smart {
-  color: rgba(255, 255, 255, 0.6);
+  color: $address-smart-color;
 }
 
 .footer__list {

@@ -1,5 +1,5 @@
 .team {
-  background-color: #f5f4fa;
+  background-color: $team-background-color;
 }
 
 .team__title {
@@ -25,8 +25,8 @@
   text-align: center;
   background-color: $color-white;
   width: calc((100% - 4 * #{$margin-30}) / 4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px $team-shadow-color-first,
+    0px 1px 1px $team-shadow-color-second, 0px 2px 1px $team-shadow-color-third;
   border-radius: 0px 0px 4px 4px;
   margin-right: $margin-30;
   margin-bottom: $margin-30;
