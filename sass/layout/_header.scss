@@ -1,16 +1,25 @@
 .header {
+  position: relative;
   background: $color-white;
   border-bottom: 1px solid $border-color;
+}
 
-  &-content {
+.header-content {
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+}
 
-  &__logo {
-    margin-right: 93px;
-  }
+.header__logo {
+  margin-right: 93px;
 }
 
 .header__site-nav {

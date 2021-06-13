@@ -28,6 +28,31 @@
           <a class="logo header__logo link" href="./index.html" lang="en">
             <span class="logo__part-web">Web</span>Studio
           </a>
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-button__icon-cross"
+                href="./images/icons.svg#icon-close-button"
+              ></use>
+              <use
+                class="menu-button__icon-menu"
+                href="./images/icons.svg#icon-send"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-mobile" id="mobile-menu" data-menu>Меню</div>
+
           <ul class="menu list">
             <li class="menu__item">
               <a class="link menu__link current" href="./index.html">Студия</a>
@@ -597,5 +622,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

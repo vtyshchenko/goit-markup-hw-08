@@ -2,23 +2,32 @@
   display: flex;
   padding: 0;
 
-  &__address-link {
-    display: inline-flex;
-    align-items: center;
-    color: $main-text-color;
+  @media screen and (min-width: $mobile) {
   }
 
-  &__item + &__item {
-    margin-left: 30px;
+  @media screen and (min-width: $tablet) {
   }
 
-  &__mail-icon {
-    @include settings__icons(currentColor, 16px, 12px);
-    margin-right: 10px;
+  @media screen and (min-width: $desktop) {
   }
+}
 
-  &__tel-icon {
-    @include settings__icons(currentColor, 10px, 16px);
-    margin-right: 10px;
-  }
+.contacts__address-link {
+  display: inline-flex;
+  align-items: center;
+  color: $main-text-color;
+}
+
+.contacts__item + .contacts__item {
+  margin-left: 30px;
+}
+
+.contacts__mail-icon {
+  @include settings__icons(currentColor, 16px, 12px);
+  margin-right: 10px;
+}
+
+.contacts__tel-icon {
+  @include settings__icons(currentColor, 10px, 16px);
+  margin-right: 10px;
 }
