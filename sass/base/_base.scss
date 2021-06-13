@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family-roboto;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
