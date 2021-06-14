@@ -1,7 +1,21 @@
 .header {
-  position: relative;
   background: $color-white;
-  border-bottom: 1px solid $border-color;
+  position: relative;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    border-bottom: 1px solid $border-color;
+    justify-content: space-between;
+  }
 }
 
 .header-content {
@@ -19,12 +33,28 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .header__site-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .current {

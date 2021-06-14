@@ -1,41 +1,61 @@
 .menu {
-  display: flex;
-  justify-content: space-between;
   padding: 0;
   color: $secondary-text-color;
 
   @media screen and (min-width: $mobile) {
+    display: block;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: $tablet) {
   }
 
   @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .menu__link {
   position: relative;
-  display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $secondary-text-color;
-  padding: 32px 0;
   transition: color $anim-duration $anim-timing-function;
 
   &:hover,
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $mobile) {
+    display: inline-block;
+    padding: 12px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    padding: 20px 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    padding: 32px 0;
+  }
 }
 
 .menu__item + .menu__item {
-  margin-left: 50px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+  }
 }
 
 .menu-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -47,6 +67,16 @@
   }
 
   &.is-open .menu-button__icon-menu {
+    display: none;
+  }
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }

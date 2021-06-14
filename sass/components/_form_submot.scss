@@ -9,8 +9,16 @@
 
 .form__submot {
   margin-top: 20px;
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .form__input {
