@@ -1,12 +1,12 @@
 .header {
   background: $color-white;
-  position: relative;
-  height: 60px;
+  // position: relative;
 
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablet - 1px) {
+    height: 60px;
   }
 
   @media screen and (min-width: $tablet) {

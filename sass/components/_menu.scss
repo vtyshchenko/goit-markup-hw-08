@@ -1,6 +1,7 @@
 .menu {
   padding: 0;
   color: $secondary-text-color;
+  background-color: aqua;
 
   @media screen and (min-width: $mobile) {
     display: block;
@@ -60,7 +61,8 @@
   margin: 0;
   padding: 0;
   border: none;
-  background-color: orange;
+  border-radius: 50%;
+  background-color: $color-white;
 
   &.is-open .menu-button__icon-cross {
     display: block;
