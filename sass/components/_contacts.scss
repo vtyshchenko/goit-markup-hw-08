@@ -1,7 +1,8 @@
 .contacts {
   padding: 0;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablet - 1px) {
+    display: none;
   }
 
   @media screen and (min-width: $tablet) {
