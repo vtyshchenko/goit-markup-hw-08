@@ -32,12 +32,12 @@
   }
 
   @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-right: calc(-1 * #{$margin-30});
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1 * #{$margin-30});
   }
 }
 
@@ -55,11 +55,15 @@
   }
 
   @media screen and (min-width: $tablet) {
+    width: calc((100% - #{$margin-30}) / 2);
+    &:nth-child(2n + 1) {
+      margin-right: $margin-30;
+    }
   }
 
   @media screen and (min-width: $desktop) {
-    margin-right: $margin-30;
     width: calc((100% - 4 * #{$margin-30}) / 4);
+    margin-right: $margin-30;
   }
 }
 
@@ -99,6 +103,8 @@
   }
 
   @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 374px;
   }
 
   @media screen and (min-width: $desktop) {

@@ -170,7 +170,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .menu__link {
     display: block;
-    padding: 20px 0;
+    padding: 32px 0;
   }
 }
 
@@ -839,17 +839,33 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .specifics__list {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specifics__list {
+    flex-wrap: nowrap;
+    margin-right: 0;
   }
 }
 
 .specifics__item {
   font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .specifics__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -968,11 +984,10 @@ body.modal-open {
   width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: calc(-1 * 30px);
   }
 }
 
@@ -986,10 +1001,19 @@ body.modal-open {
   max-width: 450px;
 }
 
+@media screen and (min-width: 768px) {
+  .person_card {
+    width: calc((100% - 30px) / 2);
+  }
+  .person_card:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .person_card {
-    margin-right: 30px;
     width: calc((100% - 4 * 30px) / 4);
+    margin-right: 30px;
   }
 }
 
@@ -1019,6 +1043,13 @@ body.modal-open {
   .person__img {
     width: 450px;
     height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .person__img {
+    width: 354px;
+    height: 374px;
   }
 }
 
@@ -1062,6 +1093,12 @@ body.modal-open {
 
 .clients__item:hover {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 @media screen and (min-width: 1200px) {

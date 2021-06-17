@@ -51,6 +51,7 @@
   }
 
   @media screen and (min-width: $tablet) {
+    width: calc((100% - 3 * #{$margin-30}) / 3);
   }
 
   @media screen and (min-width: $desktop) {
