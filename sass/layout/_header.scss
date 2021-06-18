@@ -20,13 +20,13 @@
 }
 
 .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   @media screen and (min-width: $mobile) {
   }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   @media screen and (min-width: $desktop) {
