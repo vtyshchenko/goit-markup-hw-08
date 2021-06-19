@@ -5,10 +5,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    overflow-y: auto;
     background-color: $color-white;
 
-    // font-size: 20px;
+    overflow: auto;
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -32,6 +32,7 @@
     @media screen and (min-width: $tablet) {
       display: none;
     }
+
     &__container {
       position: relative;
       padding: 48px 15px 48px 25px;
