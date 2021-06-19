@@ -1,19 +1,15 @@
 .menu-mobile-form {
   @media screen and (max-width: $tablet - 1px) {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    height: 100vh;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
     // background-color: $color-white;
     background-color: aqua;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-    overflow-y: auto;
+
+    // font-size: 20px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -24,18 +20,35 @@
       visibility: visible;
       pointer-events: all;
     }
-  }
-  @media screen and (min-width: $tablet) {
-    display: none;
+
+    &.is-open .menu-mobile__icon-cross {
+      display: block;
+      fill: $color-black;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
 }
 
-.menu-mobile__container {
+.menu-mobile-form-container {
   @media screen and (max-width: $tablet - 1px) {
-    padding-top: 49px;
-    padding-bottom: 49px;
-    margin-left: 25px;
-    margin-right: 25px;
+    position: relative;
+    padding: 48px 15px 48px 25px;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+
+    // padding: 0 15px;
+    // margin-left: 25px;
+    // margin-right: 25px;
+
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   @media screen and (min-width: $tablet) {
     display: none;
@@ -43,33 +56,20 @@
 }
 
 .menu-button {
-  position: absolute;
-  right: 0;
-  top: 0;
   margin: 0;
   padding: 0;
   border: none;
   border-radius: 50%;
   background-color: transparent;
   line-height: 0;
-  width: 40px;
-  height: 40px;
-  z-index: 1050;
+
+  // z-index: 1050;
 
   &:hover,
   &:active,
   &:focus {
     fill: $accent-color;
     cursor: pointer;
-  }
-
-  &.is-open .menu-button__icon-menu {
-    display: none;
-  }
-
-  &.is-open .menu-mobile__icon-cross {
-    display: block;
-    fill: $color-black;
   }
 
   @media screen and (min-width: $mobile) {
@@ -84,11 +84,47 @@
   }
 }
 
+.menu-close-button {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $accent-color;
+    cursor: pointer;
+  }
+}
+
+.menu-button__icon-menu {
+  width: 40px;
+  height: 40px;
+}
+
 .menu-button__icon-cross {
-  display: none;
+  width: 40px;
+  height: 40px;
 }
 
 .socila-mobile {
   display: flex;
   justify-content: space-between;
+}
+
+.contacts-mobile__mail-icon {
+  @include settings__icons(currentColor, 16px, 12px);
+  margin-right: 10px;
+}
+
+.contacts-mobile__tel-icon {
+  @include settings__icons(currentColor, 10px, 16px);
+  margin-right: 10px;
 }

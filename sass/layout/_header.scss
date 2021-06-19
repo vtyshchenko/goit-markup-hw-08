@@ -6,7 +6,9 @@
   align-items: center;
 
   @media screen and (max-width: $tablet - 1px) {
-    height: 60px;
+    // height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   @media screen and (min-width: $tablet) {

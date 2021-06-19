@@ -70,92 +70,87 @@
         <button
           class="menu-button"
           type="button"
-          width="40px"
-          height="40px"
           aria-expanded="false"
           aria-controls="mobile-menu"
           data-menu-button
         >
           <svg
+            class="menu-button__icon-menu"
             aria-label="Переключатель мобильного меню"
-            width="40px"
-            height="40px"
           >
-            <use
-              class="menu-button__icon-menu"
-              href="./images/icons.svg#icon-mobile-menu"
-            ></use>
-          </svg>
-
-          <svg
-            aria-label="Переключатель мобильного меню"
-            width="40px"
-            height="40px"
-          >
-            <use
-              class="menu-button__icon-cross"
-              href="./images/icons.svg#icon-close-button"
-            ></use>
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
+        <!-- <div class="backdrop is-hidden" data-modal> -->
         <div class="menu-mobile-form" id="mobile-menu" data-menu>
-          <ul class="menu-mobile list">
-            <li class="menu-mobile__item">
-              <a class="link menu-mobile__link current" href="./index.html"
-                >Студия</a
+          <div class="container menu-mobile-form-container">
+            <button class="menu-close-button" type="button" data-menu-close>
+              <svg
+                class="menu-button__icon-cross"
+                aria-label="Переключатель мобильного меню"
               >
-            </li>
-            <li class="menu-mobile__item">
-              <a class="link menu-mobile__link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="menu-mobile__item">
-              <a class="link menu-mobile__link" href="">Контакты</a>
-            </li>
-          </ul>
-          <div>
-            <ul class="contacts-mobile list">
-              <li class="contacts-mobile__item">
-                <a
-                  class="link menu-mobile__link contacts-mobile__address-link"
-                  href="mailto:info@devstudio.com"
-                  lang="en"
+                <use href="./images/icons.svg#icon-close-button"></use>
+              </svg>
+            </button>
+            <ul class="menu-mobile list">
+              <li class="menu-mobile__item">
+                <a class="link menu-mobile__link current" href="./index.html"
+                  >Студия</a
                 >
-                  <svg class="contacts-mobile__mail-icon">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
               </li>
-              <li class="contacts-mobile__item">
-                <a
-                  class="link menu-mobile__link contacts-mobile__address-link"
-                  href="tel:+380961111111"
+              <li class="menu-mobile__item">
+                <a class="link menu-mobile__link" href="./portfolio.html"
+                  >Портфолио</a
                 >
-                  <svg class="contacts-mobile__tel-icon">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
+              </li>
+              <li class="menu-mobile__item">
+                <a class="link menu-mobile__link" href="">Контакты</a>
               </li>
             </ul>
-            <ul class="list socila-mobile">
-              <li class="socila-mobile____item">
-                <a href="" class="link socila-mobile__link">Instagram</a>
-              </li>
-              <li class="socila-mobile____item">
-                <a href="" class="link socila-mobile__link">Twitter</a>
-              </li>
-              <li class="socila-mobile____item">
-                <a href="" class="link socila-mobile__link">Facebook</a>
-              </li>
-              <li class="socila-mobile____item">
-                <a href="" class="link socila-mobile__link">LinkedIn</a>
-              </li>
-            </ul>
+            <div>
+              <ul class="contacts-mobile list">
+                <li class="contacts-mobile__item">
+                  <a
+                    class="link menu-mobile__link contacts-mobile__address-link"
+                    href="mailto:info@devstudio.com"
+                    lang="en"
+                  >
+                    <svg class="contacts-mobile__mail-icon">
+                      <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contacts-mobile__item">
+                  <a
+                    class="link menu-mobile__link contacts-mobile__address-link"
+                    href="tel:+380961111111"
+                  >
+                    <svg class="contacts-mobile__tel-icon">
+                      <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <ul class="list socila-mobile">
+                <li class="socila-mobile____item">
+                  <a href="" class="link socila-mobile__link">Instagram</a>
+                </li>
+                <li class="socila-mobile____item">
+                  <a href="" class="link socila-mobile__link">Twitter</a>
+                </li>
+                <li class="socila-mobile____item">
+                  <a href="" class="link socila-mobile__link">Facebook</a>
+                </li>
+                <li class="socila-mobile____item">
+                  <a href="" class="link socila-mobile__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </header>
 
