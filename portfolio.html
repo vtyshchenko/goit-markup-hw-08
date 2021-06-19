@@ -77,7 +77,7 @@
           data-modal-open
         >
           <svg
-            class="header__icon-menu"
+            class="header__menu-button-icon"
             aria-label="Переключатель мобильного меню"
           >
             <use href="./images/icons.svg#icon-mobile-menu"></use>
@@ -85,15 +85,15 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="menu-mobile-form" id="mobile-menu" data-menu>
-            <div class="container menu-mobile-form-container">
+            <div class="container menu-mobile-form__container">
               <button
-                class="menu-close-button"
+                class="menu-mobile-form__close-button"
                 type="button"
                 data-menu-close
                 data-modal-close
               >
                 <svg
-                  class="menu-close-button__icon-cross"
+                  class="menu-mobile-form__close-button-icon"
                   aria-label="Переключатель мобильного меню"
                 >
                   <use href="./images/icons.svg#icon-close-button"></use>
@@ -101,43 +101,47 @@
               </button>
               <ul class="menu-mobile list">
                 <li class="menu__item menu-mobile__item">
-                  <a class="link menu__link mobile_link" href="./index.html"
+                  <a
+                    class="link menu__link menu-mobile__link"
+                    href="./index.html"
                     >Студия</a
                   >
                 </li>
                 <li class="menu__item menu-mobile__item">
                   <a
-                    class="link menu__link mobile_link current"
+                    class="link menu__link menu-mobile__link current"
                     href="./portfolio.html"
                     >Портфолио</a
                   >
                 </li>
                 <li class="menu__item menu-mobile__item">
-                  <a class="link menu__link mobile_link" href="">Контакты</a>
+                  <a class="link menu__link menu-mobile__link" href=""
+                    >Контакты</a
+                  >
                 </li>
               </ul>
               <div>
-                <ul class="contacts-mobile list">
-                  <li class="contacts-mobile__item">
+                <ul class="menu-mobile-contacts list">
+                  <li class="menu-mobile-contacts__item-phone">
                     <a
                       class="
                         link
                         menu__link
                         contacts__address-link
-                        mobile-phone
+                        menu-mobile-contacts__phone
                       "
                       href="tel:+380961111111"
                     >
                       +38 096 111 11 11
                     </a>
                   </li>
-                  <li class="contacts__item">
+                  <li class="menu-mobile-contacts__item-address">
                     <a
                       class="
                         link
                         menu__link
                         contacts__address-link
-                        mobile-address
+                        menu-mobile-contacts__address
                       "
                       href="mailto:info@devstudio.com"
                       lang="en"
@@ -146,18 +150,18 @@
                     </a>
                   </li>
                 </ul>
-                <ul class="list socila-mobile__list">
-                  <li class="socila-mobile____item">
-                    <a href="" class="link socila-mobile__link">Instagram</a>
+                <ul class="list social-mobile">
+                  <li class="social-mobile____item">
+                    <a href="" class="link social-mobile__link">Instagram</a>
                   </li>
-                  <li class="socila-mobile____item">
-                    <a href="" class="link socila-mobile__link">Twitter</a>
+                  <li class="social-mobile____item">
+                    <a href="" class="link social-mobile__link">Twitter</a>
                   </li>
-                  <li class="socila-mobile____item">
-                    <a href="" class="link socila-mobile__link">Facebook</a>
+                  <li class="social-mobile____item">
+                    <a href="" class="link social-mobile__link">Facebook</a>
                   </li>
-                  <li class="socila-mobile____item">
-                    <a href="" class="link socila-mobile__link">LinkedIn</a>
+                  <li class="social-mobile____item">
+                    <a href="" class="link social-mobile__link">LinkedIn</a>
                   </li>
                 </ul>
               </div>
