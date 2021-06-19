@@ -1,12 +1,10 @@
 .header {
   background: $color-white;
-  // position: relative;
 
   display: flex;
   align-items: center;
 
   @media screen and (max-width: $tablet - 1px) {
-    // height: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
   }

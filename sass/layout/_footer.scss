@@ -3,6 +3,7 @@
 
   padding-top: 60px;
   padding-bottom: 60px;
+
   @media screen and (min-width: $mobile) {
   }
 
@@ -32,6 +33,20 @@
 .address__list {
   padding: 0;
   margin: 0;
+
+  @media screen and (max-width: $tablet - 1px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    // flex-direction: row;
+  }
 }
 
 .address__item {
@@ -57,20 +72,57 @@
 }
 
 .footer__list {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: $tablet - 1px) {
   }
 
   @media screen and (min-width: $tablet) {
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
     align-items: baseline;
+
+    flex-direction: row;
+  }
+}
+
+.footer__address-wrapper {
+  display: flex;
+  @media screen and (max-width: $tablet - 1px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.footer__address {
+  @media screen and (max-width: $tablet - 1px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-right: 165px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
 .footer__social-block {
-  @media screen and (min-width: $mobile) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -96,4 +148,8 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 19px;
   }
+}
+
+.footer__social-list {
+  margin-top: 20px;
 }
