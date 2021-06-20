@@ -1,17 +1,23 @@
-.modal {
+.modal-wrapper {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 528px;
   transform: translate(-50%, -50%) scale(1);
+
   transition: opacity $anim-duration $anim-timing-function,
     transform $anim-duration $anim-timing-function;
+
+  @media screen and (max-width: $desktop - 1px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
 }
 
 .modal__button {
   position: absolute;
-  top: calc(50% - 283px);
-  left: calc(50% + 226px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,13 +43,16 @@
     color: $accent-color;
     transform: rotateZ(0deg);
   }
-}
 
-@media screen and (min-width: $mobile) {
-}
+  @media screen and (max-width: $desktop - 1px) {
+    // top: calc(50% - 300px);
+    // left: calc(50% + 182px);
+    top: 8px;
+    right: 8px;
+  }
 
-@media screen and (min-width: $tablet) {
-}
-
-@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
+    top: calc(50% - 283px);
+    left: calc(50% + 226px);
+  }
 }
