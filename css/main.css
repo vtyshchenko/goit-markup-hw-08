@@ -802,8 +802,8 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1371,15 +1371,33 @@ body.modal-open {
 
 .filters__list {
   display: flex;
-  justify-content: center;
   padding-left: 0;
   padding-right: 0;
   margin-top: 0;
-  margin-bottom: 50px;
 }
 
-.filters__item {
+@media screen and (max-width: 1199px) {
+  .filters__list {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.filters__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .filters__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .filters__button {
@@ -1411,16 +1429,25 @@ body.modal-open {
   padding-left: 0;
   padding-right: 0;
   margin-top: 0;
-  margin-right: calc(-1 * 30px);
   margin-bottom: calc(-1 * 30px);
+}
+
+@media screen and (max-width: 767px) {
+  .cards__list {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards__list {
+    margin-right: calc(-1 * 30px);
+  }
 }
 
 .cards__item {
   position: relative;
   box-sizing: border-box;
   background-color: #ffffff;
-  width: calc( (100% - 3) * 30px / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1428,6 +1455,30 @@ body.modal-open {
 .cards__item:focus, .cards__item:active, .cards__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.08), 1px 4px 6px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards__item {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc( (100% - 3 * 30px) / 3);
+  }
 }
 
 .cards__link {
@@ -1475,6 +1526,7 @@ body.modal-open {
   left: 0;
   opacity: 0;
   font-size: 18px;
+  line-height: 1.56;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   overflow: auto;
