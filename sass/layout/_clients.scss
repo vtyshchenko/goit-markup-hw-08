@@ -18,18 +18,13 @@
 
 .clients__list {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-top: 0;
-  margin-right: calc(-1 * #{$margin-30});
-  margin-bottom: calc(-1 * #{$margin-30});
-  @media screen and (min-width: $mobile) {
-  }
+  // padding-left: 0;
+  // margin-top: 0;
+  // margin-right: calc(-1 * #{$margin-30});
 
-  @media screen and (min-width: $tablet) {
-  }
-
-  @media screen and (min-width: $desktop) {
+  @media screen and (max-width: $desktop - 1) {
+    flex-wrap: wrap;
+    margin-bottom: calc(-1 * #{$margin-30});
   }
 }
 
@@ -40,22 +35,44 @@
   background-color: $color-white;
   color: $social-link-color;
   border-radius: 4px;
-  width: calc((100% - 2 * #{$margin-30}) / 2);
-  margin-right: $margin-30;
-  margin-bottom: $margin-30;
+  width: calc((100% - #{$margin-30}) / 2);
 
   &:hover {
     color: $accent-color;
   }
-  @media screen and (min-width: $mobile) {
+
+  @media screen and (max-width: $tablet - 1px) {
+    &:nth-child(2n + 1) {
+      margin-right: $margin-30;
+    }
+    &:nth-child(-n + 4) {
+      margin-bottom: $margin-30;
+    }
   }
 
   @media screen and (min-width: $tablet) {
     width: calc((100% - 3 * #{$margin-30}) / 3);
+
+    &:nth-child(-n + 3) {
+      margin-bottom: $margin-30;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-right: $margin-30;
+    }
+
+    &:nth-last-child(-n + 3):not(:last-child) {
+      margin-right: $margin-30;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     width: calc((100% - 6 * #{$margin-30}) / 6);
+
+    &:not(:last-child) {
+      margin-right: $margin-30;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -74,16 +91,8 @@
   height: 92px;
   transition: color $anim-duration $anim-timing-function;
 
+  &:hover,
   &:focus {
     color: $accent-color;
   }
-}
-
-@media screen and (min-width: $mobile) {
-}
-
-@media screen and (min-width: $tablet) {
-}
-
-@media screen and (min-width: $desktop) {
 }

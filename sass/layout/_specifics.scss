@@ -2,12 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: $mobile) {
-  }
-
-  @media screen and (min-width: $tablet) {
-  }
-
   @media screen and (min-width: $desktop) {
     padding-top: 99px;
     padding-bottom: 47px;
@@ -15,33 +9,41 @@
 }
 
 .specifics__list {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $mobile - 1px) {
+    margin-bottom: -1 * #{$margin-30};
   }
 
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    // padding-left: 0;
+    // margin-top: 0;
+    // margin-bottom: 0;
     margin-right: -1 * $margin-30;
+    margin-bottom: -1 * #{$margin-30};
   }
 
   @media screen and (min-width: $desktop) {
+    display: flex;
     flex-wrap: nowrap;
     margin-right: 0;
+    margin-right: -1 * $margin-30;
   }
 }
 
 .specifics__item {
   font-size: 14px;
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: $tablet - 1px) {
+    &:not(:last-child) {
+      margin-bottom: $margin-30;
+    }
   }
 
   @media screen and (min-width: $tablet) {
     width: calc((100% - 2 * #{$margin-30}) / 2);
 
     margin-right: $margin-30;
+    margin-bottom: $margin-30;
   }
 
   @media screen and (min-width: $desktop) {
