@@ -1324,7 +1324,6 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .clients__list {
     flex-wrap: wrap;
-    margin-bottom: calc(-1 * 30px);
   }
 }
 
