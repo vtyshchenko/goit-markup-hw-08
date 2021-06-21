@@ -83,12 +83,6 @@
   max-width: 360px;
   text-align: center;
 
-  @media screen and (min-width: $mobile) {
-  }
-
-  @media screen and (min-width: $tablet) {
-  }
-
   @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.36;

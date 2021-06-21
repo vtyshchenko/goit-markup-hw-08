@@ -10,9 +10,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  @media screen and (min-width: $desktop) {
-  }
 }
 
 .menu__link {
@@ -36,10 +33,6 @@
 
   @media screen and (min-width: $tablet) {
     display: block;
-    padding: 32px 0;
-  }
-
-  @media screen and (min-width: $desktop) {
     padding: 32px 0;
   }
 }

@@ -16,21 +16,12 @@
 }
 
 .form__submot {
-  margin-top: 20px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: $mobile) {
-  }
-
-  @media screen and (min-width: $tablet) {
-  }
+  margin-top: 20px;
 
   @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-
     flex-direction: row;
   }
 }
@@ -41,11 +32,12 @@
   line-height: 1.25;
   background: #2f303a;
   color: $form-input-color;
+  padding: 16px 0 16px 16px;
+  margin-bottom: 20px;
   width: 100%;
   height: 50px;
-  padding: 16px 0 16px 16px;
-  border: 1px solid $form-input-border-color;
   box-sizing: border-box;
+  border: 1px solid $form-input-border-color;
   filter: drop-shadow(0px 4px 4px $form-input-filter-color);
   border-radius: 4px;
   transition: border $anim-duration $anim-timing-function;
@@ -55,12 +47,7 @@
     border: 1px solid $form-input-hover-border-color;
   }
 
-  @media screen and (max-width: $tablet) {
-    margin-bottom: 20px;
-  }
-
   @media screen and (min-width: $tablet) {
-    margin-bottom: 20px;
     width: 450px;
   }
 
@@ -76,13 +63,4 @@
   height: 24px;
   background-size: contain;
   margin: 10px;
-}
-
-@media screen and (min-width: $mobile) {
-}
-
-@media screen and (min-width: $tablet) {
-}
-
-@media screen and (min-width: $desktop) {
 }

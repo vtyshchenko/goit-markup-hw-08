@@ -4,6 +4,12 @@
   justify-content: center;
 }
 
+%flex__column_sb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 %buttons {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -23,11 +29,5 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
-}
-
-@media screen and (min-width: $tablet) {
-}
-
-@media screen and (min-width: $desktop) {
-}
+//@extend %buttons;
+// @extend %flex__center;

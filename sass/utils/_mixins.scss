@@ -42,12 +42,3 @@
   font-weight: $fw;
   line-height: decimal-round($lh / $fs, 3);
 }
-
-@media screen and (min-width: $mobile) {
-}
-
-@media screen and (min-width: $tablet) {
-}
-
-@media screen and (min-width: $desktop) {
-}

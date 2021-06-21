@@ -34,7 +34,7 @@
       padding: 48px 15px 48px 25px;
       width: 100vw;
       height: 100vh;
-
+      // @extend %flex__column_sb;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -51,13 +51,13 @@
       position: absolute;
       right: 0;
       top: 10px;
-      width: 40px;
-      height: 40px;
-      border: none;
-      margin: 0;
-      padding: 0;
       background-color: transparent;
       line-height: 0;
+      border: none;
+      width: 40px;
+      height: 40px;
+      margin: 0;
+      padding: 0;
 
       &:hover,
       &:active,

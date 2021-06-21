@@ -18,17 +18,15 @@
 
 .modal__button {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex__center;
   color: $color-black;
   background-color: $color-white;
+  padding: 0;
+  margin: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid $modal-button-border-color;
-  padding: 0;
-  margin: 0;
   cursor: pointer;
   z-index: 102;
   transform: rotateZ(360deg);
@@ -45,8 +43,6 @@
   }
 
   @media screen and (max-width: $desktop - 1px) {
-    // top: calc(50% - 300px);
-    // left: calc(50% + 182px);
     top: 8px;
     right: 8px;
   }

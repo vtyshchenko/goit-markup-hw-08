@@ -19,8 +19,6 @@
 
 .contacts__address-link {
   color: $main-text-color;
-  @media screen and (min-width: $mobile) {
-  }
 
   @media screen and (min-width: $tablet) {
     padding: 0;
@@ -33,9 +31,6 @@
 }
 
 .contacts__item + .contacts__item {
-  @media screen and (min-width: $mobile) {
-  }
-
   @media screen and (min-width: $tablet) {
     margin-top: 10px;
   }

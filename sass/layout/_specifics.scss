@@ -15,7 +15,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    display: flex;
     flex-wrap: nowrap;
     margin-right: 0;
   }
@@ -58,9 +57,9 @@
     justify-content: center;
     align-items: center;
     background-color: $specifics-icon-background-color;
-    border-radius: 4px;
-    height: 120px;
     margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
   }
 }
 
@@ -75,13 +74,4 @@
 
 .specifics__text {
   line-height: 1.71;
-}
-
-@media screen and (min-width: $mobile) {
-}
-
-@media screen and (min-width: $tablet) {
-}
-
-@media screen and (min-width: $desktop) {
 }

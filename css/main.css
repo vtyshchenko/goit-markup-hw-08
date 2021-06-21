@@ -90,7 +90,7 @@ body.modal-open {
   }
 }
 
-.form__button, .social__link, .work__item-title {
+.form__button, .modal__button, .social__link, .work__item-title, .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,12 +168,6 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .menu__link {
     display: block;
-    padding: 32px 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .menu__link {
     padding: 32px 0;
   }
 }
@@ -308,13 +302,13 @@ body.modal-open {
     position: absolute;
     right: 0;
     top: 10px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    margin: 0;
-    padding: 0;
     background-color: transparent;
     line-height: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
   }
   .menu-mobile-form__close-button:hover, .menu-mobile-form__close-button:active, .menu-mobile-form__close-button:focus {
     fill: #2196f3;
@@ -450,17 +444,14 @@ body.modal-open {
 
 .modal__button {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #000000;
   background-color: #ffffff;
+  padding: 0;
+  margin: 0;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  margin: 0;
   cursor: pointer;
   z-index: 102;
   transform: rotateZ(360deg);
@@ -510,16 +501,14 @@ body.modal-open {
 }
 
 .form__submot {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .form__submot {
-    display: flex;
-    align-items: center;
     flex-direction: row;
   }
 }
@@ -530,11 +519,12 @@ body.modal-open {
   line-height: 1.25;
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
+  padding: 16px 0 16px 16px;
+  margin-bottom: 20px;
   width: 100%;
   height: 50px;
-  padding: 16px 0 16px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -544,15 +534,8 @@ body.modal-open {
   border: 1px solid rgba(33, 150, 243, 0.3);
 }
 
-@media screen and (max-width: 768px) {
-  .form__input {
-    margin-bottom: 20px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .form__input {
-    margin-bottom: 20px;
     width: 450px;
   }
 }
@@ -636,14 +619,14 @@ body.modal-open {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.01em;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
+  color: #212121;
+  outline: #2196f3;
   width: 100%;
   height: 40px;
   padding: 12px 12px 12px 42px;
-  color: #212121;
-  outline: #2196f3;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -656,10 +639,10 @@ body.modal-open {
   position: absolute;
   left: 12px;
   top: 50%;
-  transform: translateY(-50%);
   fill: #212121;
   width: 18px;
   height: 18px;
+  transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -676,15 +659,15 @@ body.modal-open {
   line-height: 1.143;
   letter-spacing: 0.01em;
   color: #212121;
+  outline: #2196f3;
+  padding: 12px 16px;
   width: 100%;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
   resize: none;
-  outline: #2196f3;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 12px 16px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -704,12 +687,12 @@ body.modal-open {
 
 .modal__checkbox-icon {
   display: inline-block;
+  color: #212121;
+  margin-right: 4px;
   width: 16px;
   height: 16px;
-  color: #212121;
   border: 2px solid currentColor;
   border-radius: 4px;
-  margin-right: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -744,17 +727,17 @@ body.modal-open {
 .modal__button-submit {
   background-color: #2196f3;
   color: #ffffff;
-  width: 200px;
   padding: 10px 56px;
   margin: 0 auto;
+  width: 200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-submit:focus, .modal__button-submit:hover {
-  cursor: pointer;
   background-color: #188ce8;
+  cursor: pointer;
 }
 
 .social__list {
@@ -775,8 +758,8 @@ body.modal-open {
 }
 
 .social__link:focus, .social__link:hover {
-  color: #ffffff;
   background-color: #2196f3;
+  color: #ffffff;
 }
 
 .social__icon {
@@ -795,21 +778,15 @@ body.modal-open {
 }
 
 .header {
-  background: #ffffff;
   display: flex;
   align-items: center;
+  background: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    display: unset;
   }
 }
 
@@ -849,35 +826,29 @@ body.modal-open {
 }
 
 .current::after {
+  position: absolute;
   display: block;
   left: 0;
   bottom: 0;
-  position: absolute;
   content: "";
   background-color: #2196f3;
-  border-radius: 2px;
   width: 100%;
   height: 4px;
+  border-radius: 2px;
 }
 
 .header__menu-button {
+  background-color: transparent;
+  line-height: 0;
   margin: 0;
   padding: 0;
   border: none;
   border-radius: 50%;
-  background-color: transparent;
-  line-height: 0;
 }
 
 .header__menu-button:hover, .header__menu-button:active, .header__menu-button:focus {
   fill: #2196f3;
   cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  .header__menu-button {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1004,8 +975,8 @@ body.modal-open {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
-  color: #ffffff;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1107,7 +1078,6 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .specifics__list {
-    display: flex;
     flex-wrap: nowrap;
     margin-right: 0;
   }
@@ -1155,9 +1125,9 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   background-color: #f5f4fa;
-  border-radius: 4px;
-  height: 120px;
   margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
 }
 
 .specifics__title {
@@ -1178,7 +1148,7 @@ body.modal-open {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
@@ -1190,8 +1160,8 @@ body.modal-open {
   line-height: 1.17;
   text-align: center;
   color: #212121;
-  width: 100%;
   margin: 0 0 50px 0;
+  width: 100%;
 }
 
 .work__list {
@@ -1218,8 +1188,8 @@ body.modal-open {
   font-size: 14px;
   line-height: 1.15;
   text-transform: uppercase;
-  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
   width: 100%;
   height: 70px;
 }
@@ -1234,8 +1204,8 @@ body.modal-open {
   font-size: 28px;
   text-align: center;
   color: #212121;
-  width: 100%;
   margin: 0 0 30px 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1261,9 +1231,9 @@ body.modal-open {
   font-size: 16px;
   text-align: center;
   background-color: #ffffff;
+  max-width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  max-width: 450px;
 }
 
 .person_card:not(:last-child) {
@@ -1286,26 +1256,26 @@ body.modal-open {
   .person_card {
     width: calc((100% - 3 * 30px) / 4);
   }
-  .person_card:nth-last-child(n) {
-    margin-bottom: 0;
-  }
   .person_card:not(:last-child) {
     margin-right: 30px;
+  }
+  .person_card:nth-last-child(n) {
+    margin-bottom: 0;
   }
 }
 
 .person__data-block {
+  display: inline-block;
   padding: 30px;
   margin: 0 auto;
-  display: inline-block;
 }
 
 .person__name {
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.187;
   color: #212121;
   margin: 0 0 10px 0;
-  line-height: 1.187;
 }
 
 .person__profession {
@@ -1343,8 +1313,8 @@ body.modal-open {
   line-height: 1.17;
   text-align: center;
   color: #212121;
-  width: 100%;
   margin: 0 0 50px 0;
+  width: 100%;
 }
 
 .clients__list {
@@ -1359,13 +1329,13 @@ body.modal-open {
 }
 
 .clients__item {
-  box-sizing: border-box;
-  text-align: center;
   font-size: 16px;
+  text-align: center;
   background-color: #ffffff;
   color: #afb1b8;
-  border-radius: 4px;
   width: calc((100% - 30px) / 2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .clients__item:hover {
@@ -1413,14 +1383,11 @@ body.modal-open {
 }
 
 .clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: currentColor;
-  border: 1px solid currentColor;
-  border-radius: 4px;
   width: 100%;
   height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1476,9 +1443,9 @@ body.modal-open {
   text-align: center;
   background-color: #f5f4fa;
   color: #212121;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
-  padding: 6px 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1507,11 +1474,11 @@ body.modal-open {
   position: relative;
   box-sizing: border-box;
   background-color: #ffffff;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  width: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards__item:focus, .cards__item:active, .cards__item:hover {
@@ -1590,8 +1557,8 @@ body.modal-open {
   opacity: 0;
   font-size: 18px;
   line-height: 1.56;
-  color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
   overflow: auto;
   width: 100%;
   height: 100%;
