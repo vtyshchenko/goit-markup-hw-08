@@ -6,72 +6,77 @@
     padding-top: 99px;
     padding-bottom: 47px;
   }
-}
 
-.specifics__list {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  &__list {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  @media screen and (min-width: $desktop) {
-    flex-wrap: nowrap;
-    margin-right: 0;
-  }
-}
-
-.specifics__item {
-  font-size: 14px;
-  @media screen and (max-width: $tablet - 1px) {
-    &:not(:last-child) {
-      margin-bottom: $margin-30;
+    @media screen and (min-width: $desktop) {
+      flex-wrap: nowrap;
+      margin-right: 0;
     }
   }
 
-  @media screen and (min-width: $tablet) {
-    width: calc((100% - #{$margin-30}) / 2);
-
-    &:nth-child(2n + 1) {
-      margin-right: $margin-30;
+  &__item {
+    font-size: 14px;
+    @media screen and (max-width: $tablet - 1px) {
+      &:not(:last-child) {
+        margin-bottom: $margin-30;
+      }
     }
 
-    &:nth-child(-n + 2) {
-      margin-bottom: $margin-30;
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - #{$margin-30}) / 2);
+
+      &:nth-child(2n + 1) {
+        margin-right: $margin-30;
+      }
+
+      &:nth-child(-n + 2) {
+        margin-bottom: $margin-30;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 3 * #{$margin-30}) / 4);
+
+      &:not(:last-child) {
+        margin-right: $margin-30;
+        margin-bottom: 0;
+      }
     }
   }
 
-  @media screen and (min-width: $desktop) {
-    width: calc((100% - 3 * #{$margin-30}) / 4);
+  &__icon {
+    @include settings__icons(currentColor, 70px, 70px);
 
-    &:not(:last-child) {
-      margin-right: $margin-30;
+    &--allign-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $specifics-icon-background-color;
+      margin-bottom: 30px;
+      height: 120px;
+      border-radius: 4px;
     }
   }
-}
 
-.specifics__icon {
-  @include settings__icons(currentColor, 70px, 70px);
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 10px;
 
-  &--allign-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $specifics-icon-background-color;
-    margin-bottom: 30px;
-    height: 120px;
-    border-radius: 4px;
+    @media screen and (max-width: $tablet - 1px) {
+      text-align: center;
+    }
   }
-}
 
-.specifics__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: $secondary-text-color;
-  margin-bottom: 10px;
-}
-
-.specifics__text {
-  line-height: 1.71;
+  &__text {
+    line-height: 1.71;
+  }
 }

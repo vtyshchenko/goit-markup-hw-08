@@ -35,6 +35,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -488,6 +490,7 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 
@@ -505,6 +508,7 @@ body.modal-open {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -534,7 +538,7 @@ body.modal-open {
   border: 1px solid rgba(33, 150, 243, 0.3);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .form__input {
     width: 450px;
   }
@@ -886,12 +890,11 @@ body.modal-open {
   margin: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .address__list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -917,6 +920,7 @@ body.modal-open {
   .footer__list {
     align-items: baseline;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -931,7 +935,13 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
+  .footer__address-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer__address {
     display: flex;
     flex-direction: column;
@@ -939,17 +949,22 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__address {
-    padding-right: 165px;
-    padding-bottom: 60px;
+    margin-right: 165px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__address {
-    padding-right: 0;
-    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -957,18 +972,6 @@ body.modal-open {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .footer__social-block {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__social-block {
-    margin: 0 93px 19px 70px;
-  }
 }
 
 .footer__social-title {
@@ -997,7 +1000,7 @@ body.modal-open {
   color: #ffffff;
   text-align: center;
   height: 400px;
-  max-width: 480px;
+  max-width: 768px;
   margin: 0 auto 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -1012,13 +1015,14 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero_bg@1x_tablet.jpg);
-    max-width: 768px;
+    max-width: 1200px;
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero/hero_bg@2x_tablet.jpg);
+    max-width: 1200px;
   }
 }
 
@@ -1032,7 +1036,7 @@ body.modal-open {
   }
 }
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero/hero_bg@2x_desktop.jpg);
   }
@@ -1111,6 +1115,7 @@ body.modal-open {
   }
   .specifics__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1137,6 +1142,12 @@ body.modal-open {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .specifics__title {
+    text-align: center;
+  }
 }
 
 .specifics__text {
@@ -1283,7 +1294,8 @@ body.modal-open {
 }
 
 .person__img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -1352,7 +1364,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: calc((100% - 3 * 30px) / 3);
+    width: calc((100% - 2 * 30px) / 3);
   }
   .clients__item:nth-child(-n + 3) {
     margin-bottom: 30px;
@@ -1367,7 +1379,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: calc((100% - 6 * 30px) / 6);
+    width: calc((100% - 5 * 30px) / 6);
   }
   .clients__item:not(:last-child) {
     margin-right: 30px;
